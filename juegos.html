@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explora los juegos de FAIC - Fomento al Aprendizaje Interactivo de Ciencias. Juegos educativos que combinan diversión y aprendizaje.">
+    <title>FAIC - Nuestros Juegos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Estilos adicionales */
+        body, html {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        .game-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .game-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-light text-black">
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">FAIC</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Nuestros Juegos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="comunidad.html">Comunidad</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Quiénes Somos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#contacto">Contacto</a></li>
+                            <li><a class="dropdown-item" href="#proyecto">Sobre el Proyecto</a></li>
+                            <li><a class="dropdown-item" href="#equipo">Equipo</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección de Juegos -->
+    <!-- Sección de Juegos -->
+    <section id="juegos" class="container mt-5">
+        <h2 class="text-center text-light mb-4">Nuestros Juegos</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card bg-dark text-light">
+                    <img src="robloxbanner.png" class="card-img-top" alt="Juego en Roblox">
+                    <div class="card-body">
+                        <h5 class="card-title">Juego en Roblox</h5>
+                        <p class="card-text">Explora el primer juego educativo de FAIC.</p>
+                        <a href="https://www.roblox.com/es/games/14987429084/Juego-de-quimica-F-A-I-C#!/game-instances" class="btn btn-primary">Jugar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card bg-dark text-light">
+                    <img src="planfaic.png" class="card-img-top" alt="Demo Juego 2">
+                    <div class="card-body">
+                        <h5 class="card-title">PlanFAIC</h5>
+                        <p class="card-text"></p>
+                        <a href="https://www.roblox.com/es/games/125974769317922/Proyecto-F-A-I-C-Plan-FAIC" class="btn btn-primary">Jugar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card bg-dark text-light">
+                    <img src="juego3.jpg" class="card-img-top" alt="Juego 3 en desarrollo">
+                    <div class="card-body">
+                        <h5 class="card-title">FAIC GODOT</h5>
+                        <p class="card-text">Nuestro tercer proyecto está en camino.</p>
+                        <a href="#" class="btn btn-primary">Próximamente</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-111 text-center py-4 mt-5">
+        <div class="container">
+            <p class="text-light mb-3">© 2024 FAIC - Todos los derechos reservados</p>
+            <div class="container"  align="right"> 
+                <a href="https://www.instagram.com/faic_oficial" target="_blank" class="text-light mx-2">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=61554446458172" target="_blank" class="text-light mx-2">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="mailto:proyectofaic@gmail.com" target="_blank" class="text-light mx-2">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Bootstrap Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
