@@ -1,0 +1,97 @@
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Cambiar a vertical */
+    }
+    #banner img {
+        width: 100%; /* Imágenes más grandes en móviles */
+    }
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff; /* Fondo blanco para el cuerpo */
+    color: #1f1f1f; /* Texto en negro para contraste */
+}
+
+/* Barra de navegación */
+.navbar {
+    background-color: #111 !important; /* Negro */
+}
+
+.navbar a {
+    color: #ff9800; /* Naranja */
+}
+
+.navbar a:hover {
+    color: #fb8c00; /* Tono más claro al pasar el mouse */
+}
+
+/* Mejoras del menú desplegable */
+.dropdown-menu {
+    background-color: #000; /* Fondo negro */
+}
+
+.dropdown-item {
+    color: #ff9800; /* Naranja */
+}
+
+.dropdown-item:hover {
+    background-color: #333; /* Color al pasar el mouse */
+}
+
+/* Banner principal */
+.carousel-item img {
+    height: 400px; /* Altura fija para los banners */
+    object-fit: cover; /* Ajusta la imagen sin deformarla */
+}
+
+#bannerCarousel {
+    margin-top: 100px; /* Ajusta este valor si necesitas mover más el banner hacia arriba */
+}
+
+/* Estilo para las flechas del carrusel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #130f0a; /* Color de fondo de las flechas */
+    border-radius: 50%; /* Bordes redondeados */
+    width: 30px; /* Reducir el tamaño */
+    height: 30px; /* Reducir el tamaño */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    filter: invert(1); /* Asegura que las flechas sean visibles */
+}
+
+/* Estilo para tarjetas de juegos */
+.card {
+    background-color: #343a40; /* Fondo oscuro para tarjetas */
+    border: 1px solid #110f0c; /* Borde naranja */
+}
+
+.card-body {
+    color: #ffffff; /* Texto en blanco dentro de la tarjeta */
+}
+
+/* Footer */
+footer {
+    background-color: #111 !important; /* Negro */
+    color: #ff9800; /* Naranja */
+}
+
+/* Evitar el espacio en blanco en la parte inferior */
+body {
+    margin-bottom: 0; /* Elimina márgenes en la parte inferior */
+}
+
+/* Estilo para encabezados y párrafos */
+h1, h2, h3, h4, h5, h6 {
+    color: #1f1f1f; /* Encabezados en negro */
+}
+
+p {
+    color: #1f1f1f; /* Texto en párrafos en negro */
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Únete a la comunidad de FAIC y participa en discusiones, foros y actividades.">
+    <title>FAIC - Mi Comunidad</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light text-black">
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">FAIC</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="juegos.html">Nuestros Juegos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Comunidad</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Quiénes Somos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#contacto">Contacto</a></li>
+                            <li><a class="dropdown-item" href="#proyecto">Sobre el Proyecto</a></li>
+                            <li><a class="dropdown-item" href="#equipo">Equipo</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección Principal de Comunidad -->
+    <section class="container my-5">
+        <h1 class="text-center mb-4">Bienvenidos a la Comunidad FAIC</h1>
+        <p class="text-center mb-5">Aquí puedes unirte a otros jugadores, compartir tus experiencias, recibir noticias y participar en eventos de nuestra comunidad.</p>
+
+        <!-- Sección de Anuncios -->
+        <div class="mb-5">
+            <h2>Anuncios y Novedades</h2>
+            <ul class="list-group">
+                <li class="list-group-item">Nueva actualización en el juego de Roblox. ¡Explora nuestras últimas funciones educativas!</li>
+                <li class="list-group-item">¡Únete a nuestro evento de ciencia interactiva este fin de semana!</li>
+                <li class="list-group-item">Nuevas plantillas de PlanFAIC disponibles para docentes.</li>
+            </ul>
+        </div>
+
+        <!-- Sección de Redes Sociales -->
+        <div class="mb-5">
+            <h2>Conéctate en Redes Sociales</h2>
+            <p>Sigue nuestras redes sociales y mantente al tanto de todas las noticias y actividades:</p>
+            <div class="d-flex justify-content-center">
+                <a href="https://www.instagram.com/faic_oficial" target="_blank" class="btn btn-outline-primary mx-2">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=61554446458172" target="_blank" class="btn btn-outline-primary mx-2">
+                    <i class="fab fa-facebook"></i> Facebook
+                </a>
+            </div>
+        </div>
+
+        <!-- Foro de Discusión -->
+        <div class="mb-5">
+            <h2>Foro de Discusión</h2>
+            <p>Comparte tus experiencias y consejos en el foro:</p>
+            
+            <!-- Formulario para crear una nueva publicación -->
+            <form id="postForm" class="mb-4">
+                <div class="mb-3">
+                    <label for="username" class="form-label">Nombre de usuario</label>
+                    <input type="text" class="form-control" id="username" required>
+                </div>
+                <div class="mb-3">
+                    <label for="postContent" class="form-label">Publicación</label>
+                    <textarea class="form-control" id="postContent" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Publicar</button>
+            </form>
+
+            <!-- Lista de publicaciones -->
+            <div id="forumPosts">
+                <h3>Publicaciones Recientes:</h3>
+                <ul class="list-group" id="postList"></ul>
+            </div>
+        </div>
+
+        <!-- Sección de Eventos -->
+        <div>
+            <h2>Próximos Eventos</h2>
+            <p>¡No te pierdas nuestras actividades educativas y eventos especiales!</p>
+            <ul class="list-group">
+                <li class="list-group-item">31 de Octubre - Concurso de Halloween en Roblox</li>
+                <li class="list-group-item">15 de Noviembre - Taller para docentes sobre PlanFAIC</li>
+                <li class="list-group-item">1 de Diciembre - Evento en vivo sobre ciencias</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-center py-4 mt-5 text-light">
+        <div class="container">
+            <p class="text-light mb-3">© 2024 FAIC - Todos los derechos reservados</p>
+            <a href="mailto:proyectofaic@gmail.com" target="_blank" class="text-light mx-2">
+                <i class="fas fa-envelope"></i> Contacto
+            </a>
+        </div>
+    </footer>
+
+    <!-- Font Awesome y Bootstrap JS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- JavaScript para manejar el foro -->
+    <script>
+        // Capturar el formulario y la lista de publicaciones
+        const postForm = document.getElementById("postForm");
+        const postList = document.getElementById("postList");
+
+        // Agregar publicación al enviar el formulario
+        postForm.addEventListener("submit", function(event) {
+            event.preventDefault();
+            const username = document.getElementById("username").value;
+            const postContent = document.getElementById("postContent").value;
+
+            // Crear un nuevo elemento de publicación
+            const postItem = document.createElement("li");
+            postItem.classList.add("list-group-item");
+            postItem.innerHTML = `<strong>${username}:</strong> ${postContent}`;
+
+            // Añadir la publicación a la lista
+            postList.prepend(postItem);
+
+            // Limpiar el formulario
+            postForm.reset();
+        });
+    </script>
+</body>
+</html>
